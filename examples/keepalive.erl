@@ -26,11 +26,11 @@
 -define(LOOP, {?MODULE, loop}).
 
 start(Port) ->
-    application:start(cowboy),
+    application:start(barrel),
 
-    cowboy:start_listener(http, 100,
-                          cowboy_tcp_transport, [{port, Port}],
-                          mochicow_protocol, [{loop, ?LOOP}]).
+    barrel:start_listener(http, 100,
+                          barrel_tcp, [{port, Port}],
+                          barrel_mochiweb_protocol, [{loop, ?LOOP}]).
 
 loop(Req) ->
     Path = Req:get(path),
