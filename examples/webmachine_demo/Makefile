@@ -1,5 +1,5 @@
 ERL ?= erl
-APP := webmachine_demo
+APP := webnmachine_demo
 
 .PHONY: deps
 
