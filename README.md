@@ -2,7 +2,7 @@
 
 barrel_mochiweb is a mochiweb adapter for
 [barrel](http://github.com/benoitc/barrel) allowing you to use mochiweb with the
-barrel TCP acceptor pooll.
+barrel TCP acceptor pool.
 
 ## Use mochiweb with barrel
 
